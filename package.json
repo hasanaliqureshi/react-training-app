@@ -1,0 +1,31 @@
+{
+  "name": "react-starter-pack",
+  "version": "1.0.0",
+  "description": "react basic project",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "webpack -d && cpx src/index.html dist && webpack-dev-server --content-base dist/ --inline --hot",
+    "build:prod": "webpack -p && cp src/index.html  dist"
+  },
+  "author": "Hasan Ali",
+  "license": "MIT",
+  "dependencies": {
+    "copyfiles": "^1.2.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "cpx": "^1.5.0",
+    "css-loader": "^0.28.4",
+    "react-icons": "^2.2.5",
+    "style-loader": "^0.18.2",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
